@@ -1,0 +1,272 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.app-header nav {
+  margin-top: 1rem;
+}
+
+.app-header nav a {
+  margin-right: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.required {
+  color: red;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.error-message {
+  color: red;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid red;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: var(--accent-border);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-h);
+}
+
+.status-card p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.incident-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.incident-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.incident-item:hover {
+  border-color: var(--accent);
+}
+
+.incident-item.critical {
+  border-color: red;
+  background: rgba(255, 0, 0, 0.05);
+}
+
+.incident-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-h);
+}
+
+.incident-item p {
+  margin: 0 0 0.5rem 0;
+}
+
+.incident-item .level {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.incident-item .date {
+  color: var(--text);
+  font-size: 0.875rem;
+  margin-left: 1rem;
+}
+
+.user-card,
+.material-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-card h4,
+.material-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-h);
+}
+
+.user-card p,
+.material-card p {
+  margin: 0 0 0.5rem 0;
+}
+
+.user-card .role,
+.user-card .area,
+.material-card .type {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.user-card .status.active {
+  color: green;
+}
+
+.user-card .status.inactive {
+  color: red;
+}
+
+.material-card .date {
+  color: var(--text);
+  font-size: 0.875rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ia-response {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.ia-response h3 {
+  margin: 0 0 1rem 0;
+  color: var(--text-h);
+}
+
+.ia-response .content {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.report-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.report-success h2 {
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.health-status {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.health-status p {
+  margin: 0 0 0.5rem 0;
+}
+
+.usuario-form {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.usuarios-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.intervencion-form {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
